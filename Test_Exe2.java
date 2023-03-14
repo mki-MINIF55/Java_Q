@@ -12,36 +12,36 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-/*mainÒ¿¯ÄŞ
-Ã½Ä‚Ì“š‚¦‚Æ‰ğà‚Ì“à—e‚ğTest.csv‚©‚ç“Ç‚İ‚ŞB
-‚»‚ÌŒãA‚»‚Ì’†‚©‚çƒ‰ƒ“ƒ_ƒ€‚É1–âo‘è‚·‚éB
-‰ğ“šÒiƒ†[ƒUj‚Í•W€“ü—Í‚©‚ç‰ñ“š‚ğ‘Å‚¿‚ŞB
-³‰ğ‚È‚çu³‰ğIv‚Æ•\¦A•s³‰ğ‚È‚çu•s³‰ğv‚Æ•\¦B
-‘S•”‚Å5–âo‘è‚µA‰½–â“š‚¦‚ç‚ê‚½‚©‚ğÅŒã‚É•\¦‚·‚éB
-test_Exe2‚Í×İÀŞÑo‘è‚Åd•¡–³‚µ
-Randam¸×½‚É‚Í—”¶¬‚É•Î‚è‚ª‚ ‚é‚½‚ßA•Î‚è‚È‚­—”‚ğ¶¬‚·‚é
-java.security.SecureRandom¸×½‚ğg—p‚·‚é‚±‚Æ‚Å•Î‚è‚ğŒ¸‚ç‚·
+/*mainï¾’ï½¿ï½¯ï¾„ï¾
+ï¾ƒï½½ï¾„ã®ç­”ãˆã¨è§£èª¬ã®å†…å®¹ã‚’Test.csvã‹ã‚‰èª­ã¿è¾¼ã‚€ã€‚
+ãã®å¾Œã€ãã®ä¸­ã‹ã‚‰ãƒ©ãƒ³ãƒ€ãƒ ã«1å•å‡ºé¡Œã™ã‚‹ã€‚
+è§£ç­”è€…ï¼ˆãƒ¦ãƒ¼ã‚¶ï¼‰ã¯æ¨™æº–å…¥åŠ›ã‹ã‚‰å›ç­”ã‚’æ‰“ã¡è¾¼ã‚€ã€‚
+æ­£è§£ãªã‚‰ã€Œæ­£è§£ï¼ã€ã¨è¡¨ç¤ºã€ä¸æ­£è§£ãªã‚‰ã€Œä¸æ­£è§£ã€ã¨è¡¨ç¤ºã€‚
+å…¨éƒ¨ã§5å•å‡ºé¡Œã—ã€ä½•å•ç­”ãˆã‚‰ã‚ŒãŸã‹ã‚’æœ€å¾Œã«è¡¨ç¤ºã™ã‚‹ã€‚
+test_Exe2ã¯ï¾—ï¾ï¾€ï¾ï¾‘å‡ºé¡Œã§é‡è¤‡ç„¡ã—
+Randamï½¸ï¾—ï½½ã«ã¯ä¹±æ•°ç”Ÿæˆæ™‚ã«åã‚ŠãŒã‚ã‚‹ãŸã‚ã€åã‚Šãªãä¹±æ•°ã‚’ç”Ÿæˆã™ã‚‹
+java.security.SecureRandomï½¸ï¾—ï½½ã‚’ä½¿ç”¨ã™ã‚‹ã“ã¨ã§åã‚Šã‚’æ¸›ã‚‰ã™
 */
 public class Test_Exe2 {
 
   public static void main(String[] args) {
-    // ¸²½ŞŠJn
+    // ï½¸ï½²ï½½ï¾é–‹å§‹
     System.out.println();
     System.out.println(Test_Constant.START);
     System.out.println(Test_Constant.SATRT_DESCRIPTION);
     System.out.println();
     System.out.println(Test_Constant.ENTER_KEY);
 
-    // Ò¿¯ÄŞB ¸²½Ş‚ğ×İÀŞÑ‚Éo‘è‚Æ“š‚¦‡‚í‚¹
+    // ï¾’ï½¿ï½¯ï¾„ï¾B ï½¸ï½²ï½½ï¾ã‚’ï¾—ï¾ï¾€ï¾ï¾‘ã«å‡ºé¡Œã¨ç­”ãˆåˆã‚ã›
     arrayList();
   }
 
   // ----------------------------------------------------------------
   /**
-   * A •¶š—ñ‚ğ“ü—Í‚·‚éƒƒ\ƒbƒh
+   * A æ–‡å­—åˆ—ã‚’å…¥åŠ›ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
    *
-   * @param ‚È‚µ
-   * @return inputWord “ü—Í’l
+   * @param ãªã—
+   * @return inputWord å…¥åŠ›å€¤
    */
   public static String inputString() {
     InputStreamReader isr = new InputStreamReader(System.in);
@@ -57,20 +57,20 @@ public class Test_Exe2 {
 
   // ----------------------------------------------------------------
   /**
-   * B enterÒ¿¯Ä
+   * B enterï¾’ï½¿ï½¯ï¾„
    *
    * @param enter
    */
   public static void enter() {
-    // Enter‰Ÿ‚·‚ÆŸ‚ğ•\¦
+    // EnteræŠ¼ã™ã¨æ¬¡ã‚’è¡¨ç¤º
     String enter = new java.util.Scanner(System.in).nextLine();
   }
 
   // ----------------------------------------------------------------
   /**
-   * C ”z—ñ‚ğ“Ç‚İ‚İArrauList‚ÉŠi”[‚·‚éÒ¿¯ÄŞ
+   * C é…åˆ—ã‚’èª­ã¿è¾¼ã¿ArrauListã«æ ¼ç´ã™ã‚‹ï¾’ï½¿ï½¯ï¾„ï¾
    *
-   * @param ‚È‚µ
+   * @param ãªã—
    * @return arrayList
    */
   public static String arrayList() {
@@ -79,60 +79,60 @@ public class Test_Exe2 {
     BufferedReader reader = null;
     String arrayList = "";
     try {
-      file = new FileInputStream("answer_javaBronz_P6.csv");
+      file = new FileInputStream("answer.csv");
       isr = new InputStreamReader(file);
       reader = new BufferedReader(isr);
 
-      // csv‚©‚ç“Ç‚İ‚Ş—pArrayList
+      // csvã‹ã‚‰èª­ã¿è¾¼ã‚€ç”¨ArrayList
       List<String[]> arrTest = new ArrayList<String[]>();
 
-      // “Ç‚İ‚İs—p
+      // èª­ã¿è¾¼ã¿è¡Œç”¨
       String line;
-      // s”ŠÇ—
+      // è¡Œæ•°ç®¡ç†
       int row = 0;
-      // ¸²½Şo‘èŠÇ—
+      // ï½¸ï½²ï½½ï¾å‡ºé¡Œç®¡ç†
       int q_count = 0;
-      // ³‰ğ”ŠÇ—
+      // æ­£è§£æ•°ç®¡ç†
       int count = 0;
-      // ŒŸõŒ‹‰Êo—Í
+      // æ¤œç´¢çµæœå‡ºåŠ›
       int srechCount = 0;
-      // –â‘è”o‘è”
+      // å•é¡Œæ•°å‡ºé¡Œæ•°
       //final int Q_ROOP_MAX = 3;
 
       Random random = new SecureRandom();
       enter();
 
-      // ˆês‚¸‚Â“Ç‚İ‚İ‚ğs‚¤ ‹ó”’s‚É‚È‚é‚Ü‚Å“Ç‚İ‚İ
+      // ä¸€è¡Œãšã¤èª­ã¿è¾¼ã¿ã‚’è¡Œã† ç©ºç™½è¡Œã«ãªã‚‹ã¾ã§èª­ã¿è¾¼ã¿
       while ((line = reader.readLine()) != null) {
-        // arrTest‚ÉƒJƒ“ƒ}‹æØ‚è‚Ì’l‚ğ”z—ñ‚ÉŠi”[‚·‚é
+        // arrTestã«ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã®å€¤ã‚’é…åˆ—ã«æ ¼ç´ã™ã‚‹
         arrTest.add(line.split(","));
       }
 
       /*
-       * ¸²½ŞŠJn
-       * ¸²½Ş‚ğarrTest.size()Ù°Ìß
+       * ï½¸ï½²ï½½ï¾é–‹å§‹
+       * ï½¸ï½²ï½½ï¾ã‚’arrTest.size()ï¾™ï½°ï¾Œï¾Ÿ
        */
       for (int i = 0; i < arrTest.size(); i++) {
-        // arrTest ×İÀŞÑ¶¬
+        // arrTest ï¾—ï¾ï¾€ï¾ï¾‘ç”Ÿæˆ
         for (String[] arrs : arrTest) {
           int q_Arry = (int) Integer.parseInt(arrs[0]);
           int q_Arrys = random.nextInt(arrTest.size()) + 1;
 
           String q_Arrys_Str = String.valueOf(q_Arrys);
-          // s²İ¸ØÒİÄ
+          // è¡Œï½²ï¾ï½¸ï¾˜ï¾’ï¾ï¾„
           row++;
 
-          // ×İÀŞÑ‚É‚µ‚½¸²½Ş‚ğ1‚Âo‘è
+          // ï¾—ï¾ï¾€ï¾ï¾‘ã«ã—ãŸï½¸ï½²ï½½ï¾ã‚’1ã¤å‡ºé¡Œ
           if (q_Arrys_Str.equals(arrs[0])) {
             System.out.println(
               q_count + 1 + Test_Constant.ANS_COUNT_MSG + arrs[1]
             );
             q_count++;
 
-            // •W€“ü—Í‚Å‰ñ“š‚ğó‚¯•t‚¯Ò¿¯ÄŞ
+            // æ¨™æº–å…¥åŠ›ã§å›ç­”ã‚’å—ã‘ä»˜ã‘ï¾’ï½¿ï½¯ï¾„ï¾
             String input = inputString();
 
-            // “ü—Í‚µ‚½’l‚©‚çŒŸõŒ‹‰Ê‚ğo—Í‚·‚éƒƒ\ƒbƒh
+            // å…¥åŠ›ã—ãŸå€¤ã‹ã‚‰æ¤œç´¢çµæœã‚’å‡ºåŠ›ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
             // for (String[] arr : arrTest) {
             if (input.equals(arrs[2])) {
               System.out.println();
@@ -142,9 +142,9 @@ public class Test_Exe2 {
               System.out.println(arrs[3]);
               System.out.println(Test_Constant.LINESTRING);
 
-              // ŒŸõ¶³İÄ²İ¸ØÒİÄ
+              // æ¤œç´¢ï½¶ï½³ï¾ï¾„ï½²ï¾ï½¸ï¾˜ï¾’ï¾ï¾„
               srechCount++;
-            } else if (srechCount == 0) { // ŒŸõ‚·‚é‚Æ‚«‚Éˆê’v‚µ‚È‚©‚Á‚½‚Æ‚«
+            } else if (srechCount == 0) { // æ¤œç´¢ã™ã‚‹ã¨ãã«ä¸€è‡´ã—ãªã‹ã£ãŸã¨ã
               System.out.println();
 
               System.out.println(input + Test_Constant.NOT_STRIKE);
@@ -163,7 +163,7 @@ public class Test_Exe2 {
         q_count +
         Test_Constant.ANS_COUNT_TOTAL_QMSG +
         count +
-        " ™ " +
+        " â˜† " +
         Test_Constant.ANS_COUNT_TOTAL_MSG
       );
 
