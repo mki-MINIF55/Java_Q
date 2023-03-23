@@ -96,9 +96,7 @@ public class Test_Exe2 {
       int count = 0;
       // 検索結果出力
       int srechCount = 0;
-      // 問題数出題数
-      //final int Q_ROOP_MAX = 3;
-
+      
       Random random = new SecureRandom();
       enter();
 
@@ -144,7 +142,8 @@ public class Test_Exe2 {
 
               // 検索ｶｳﾝﾄｲﾝｸﾘﾒﾝﾄ
               srechCount++;
-            } else if (srechCount == 0) { // 検索するときに一致しなかったとき
+            }  
+            if (srechCount == 0) { // 検索するときに一致しなかったとき
               System.out.println();
 
               System.out.println(input + Test_Constant.NOT_STRIKE);
