@@ -141,8 +141,9 @@ public class Test_Exe2 {
               System.out.println(Test_Constant.LINESTRING);
               // 検索ｶｳﾝﾄｲﾝｸﾘﾒﾝﾄ
               srechCount++;
+            } else {
+              System.out.println(input + Test_Constant.NOT_STRIKE);
             }
-            System.out.println(input + Test_Constant.NOT_STRIKE);
 
             if (Test_Constant.NOT_STRIKE.equals(Test_Constant.NOT_STRIKE)) { // 検索し一致しなかったとき
               System.out.println();
