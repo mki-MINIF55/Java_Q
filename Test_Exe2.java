@@ -79,7 +79,7 @@ public class Test_Exe2 {
     BufferedReader reader = null;
     String arrayList = "";
     try {
-      file = new FileInputStream("answer.csv");
+      file = new FileInputStream("answer_javaBronz_P6.csv");
       isr = new InputStreamReader(file);
       reader = new BufferedReader(isr);
 
@@ -96,7 +96,7 @@ public class Test_Exe2 {
       int count = 0;
       // 検索結果出力
       int srechCount = 0;
-      
+
       Random random = new SecureRandom();
       enter();
 
@@ -139,21 +139,22 @@ public class Test_Exe2 {
               System.out.println(Test_Constant.ANS_MSG + arrs[2]);
               System.out.println(arrs[3]);
               System.out.println(Test_Constant.LINESTRING);
-
               // 検索ｶｳﾝﾄｲﾝｸﾘﾒﾝﾄ
               srechCount++;
-            }  
-            if (srechCount == 0) { // 検索するときに一致しなかったとき
+            }
+            System.out.println(input + Test_Constant.NOT_STRIKE);
+
+            if (Test_Constant.NOT_STRIKE.equals(Test_Constant.NOT_STRIKE)) { // 検索し一致しなかったとき
               System.out.println();
 
-              System.out.println(input + Test_Constant.NOT_STRIKE);
+              //System.out.println(input + Test_Constant.NOT_STRIKE);
               System.out.println(Test_Constant.ANS_MSG + arrs[2]);
               System.out.println(arrs[3]);
               System.out.println(Test_Constant.LINESTRING);
             }
-          }
-          if (arrTest.size() == q_count) {
-            break;
+            if (arrTest.size() == q_count) {
+              break;
+            }
           }
         }
       }
